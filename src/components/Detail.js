@@ -26,6 +26,11 @@ function Detail() {
           <img src="/images/group-icon.png" />
         </GroupWatchButton>
       </Controls>
+      <SubTitle>2018 ‧ Short/Animation ‧ 8 mins</SubTitle>
+      <Description>
+        An ageing Chinese mother, feeling alone when her child moves out, gets a
+        second chance at motherhood when one of her dumplings comes to life.
+      </Description>
     </Container>
   );
 }
@@ -114,4 +119,17 @@ const AddButton = styled.button`
 const GroupWatchButton = styled(AddButton)`
   margin-left: -46px;
   background-color: rgb(0, 0, 0);
+`;
+
+const SubTitle = styled.div`
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  margin-top: 26px;
+`;
+
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  width: 80vw;
+  margin-top: 20px;
 `;
