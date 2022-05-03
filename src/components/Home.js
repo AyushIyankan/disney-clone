@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
 import Movies from "./Movies";
 
+import data from "../data/data.json";
+
 function Home() {
+  const urlTop250 = `https://imdb-api.com/en/API/Top250Movies/k_5w131vk7`;
+
+  const [movies, setMovies] = useState(data);
+
+  console.log(movies);
+
   return (
     <Container>
       <ImgSlider />
       <Viewers />
-      <Movies />
+      {<Movies />}
     </Container>
   );
 }
